@@ -18,7 +18,7 @@ CREATE TABLE `categories` (
 
 CREATE TABLE `users` (
   `id` INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(255) NOT NULL,
+  `username` VARCHAR(255) NOT NULL,
   `email` VARCHAR(255) DEFAULT NULL,
   `is_admin` TINYINT(1) NOT NULL,
   `is_parent` TINYINT(1) NOT NULL,
