@@ -11,3 +11,8 @@ This project may include the migration management tools for the database as well
 ## DB Design
 
 ![alt text](./assets/images/design/ChoreRewardsV0.2.png)
+
+## ToDo
+
+* [ ] Add `rewards` table, which shows a list of things that can be purchased with points
+* [ ] Add `transactions` table, which shows a list of purchases
