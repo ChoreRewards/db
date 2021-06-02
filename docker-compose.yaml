@@ -1,0 +1,14 @@
+version: '3.1'
+services:
+  db:
+    image: postgres
+    container_name: chorerewards_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: supersecretpassword
+      POSTGRES_USER: chorerewards
+      POSTGRES_DB: chorerewards
+    volumes:
+      - ${HOME}/chorerewards/db:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
