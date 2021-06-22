@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS "tasks" (
   "category_id" INT,
   "assignee_id" INT,
   "name" VARCHAR(255) NOT NULL,
-  "description" TEXT DEFAULT NULL,
+  "description" TEXT NOT NULL DEFAULT '',
   "points" INT DEFAULT 0,
   "is_repeatable" BOOLEAN DEFAULT FALSE
 );
