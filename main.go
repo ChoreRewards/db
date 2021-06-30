@@ -14,10 +14,10 @@ func main() {
 		"postgres://chorerewards:supersecretpassword@localhost:5432/chorerewards?sslmode=disable",
 	)
 	if err != nil {
-		log.Fatal(err)
+		log.Fatal("error creating new migration: ", err)
 	}
 
 	if err := m.Up(); err != nil {
-		log.Fatal(err)
+		log.Fatal("error running migrations: ", err)
 	}
 }
